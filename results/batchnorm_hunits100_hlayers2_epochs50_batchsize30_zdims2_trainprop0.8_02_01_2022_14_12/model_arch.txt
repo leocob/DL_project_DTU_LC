@@ -1,0 +1,32 @@
+VAE(
+  (relu): ReLU()
+  (fc0): Linear(in_features=2, out_features=1, bias=True)
+  (bn0): BatchNorm1d(109348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc1): Linear(in_features=109348, out_features=100, bias=True)
+  (bn1): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (encode_layers): ModuleList(
+    (0): Linear(in_features=100, out_features=100, bias=True)
+    (1): Linear(in_features=100, out_features=100, bias=True)
+  )
+  (encode_batchnorms): ModuleList(
+    (0): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (1): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (fcmu): Linear(in_features=100, out_features=2, bias=True)
+  (bnmu): BatchNorm1d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fclogvar): Linear(in_features=100, out_features=2, bias=True)
+  (bnlogvar): BatchNorm1d(2, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc4): Linear(in_features=2, out_features=100, bias=True)
+  (bn4): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (decoder_layers): ModuleList(
+    (0): Linear(in_features=100, out_features=100, bias=True)
+    (1): Linear(in_features=100, out_features=100, bias=True)
+  )
+  (decoder_batchnorms): ModuleList(
+    (0): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (1): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (fc4toreconstructed): Linear(in_features=100, out_features=109348, bias=True)
+  (bn4toreconstructed): BatchNorm1d(109348, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (fc5): Linear(in_features=1, out_features=2, bias=True)
+)
